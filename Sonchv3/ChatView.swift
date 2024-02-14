@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import Alamofire
+@_exported import Inject
 
 struct ContentView: View {
     var body: some View {
@@ -16,6 +18,7 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .enableInjection()
     }
 }
 
