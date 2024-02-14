@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		348EDF262B7CB10F00B1BA66 /* Sonchv3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EDF252B7CB10F00B1BA66 /* Sonchv3App.swift */; };
-		348EDF282B7CB10F00B1BA66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EDF272B7CB10F00B1BA66 /* ContentView.swift */; };
+		348EDF282B7CB10F00B1BA66 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EDF272B7CB10F00B1BA66 /* ChatView.swift */; };
 		348EDF2A2B7CB11000B1BA66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 348EDF292B7CB11000B1BA66 /* Assets.xcassets */; };
 		348EDF2E2B7CB11000B1BA66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 348EDF2D2B7CB11000B1BA66 /* Preview Assets.xcassets */; };
 		348EDF382B7CB11000B1BA66 /* Sonchv3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EDF372B7CB11000B1BA66 /* Sonchv3Tests.swift */; };
 		348EDF422B7CB11000B1BA66 /* Sonchv3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EDF412B7CB11000B1BA66 /* Sonchv3UITests.swift */; };
 		348EDF442B7CB11000B1BA66 /* Sonchv3UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EDF432B7CB11000B1BA66 /* Sonchv3UITestsLaunchTests.swift */; };
+		348EDF522B7CB15900B1BA66 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = 348EDF512B7CB15900B1BA66 /* Inject */; };
+		348EDF552B7CB16500B1BA66 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 348EDF542B7CB16500B1BA66 /* Alamofire */; };
+		348EDF572B7CB2E100B1BA66 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EDF562B7CB2E100B1BA66 /* ChatViewModel.swift */; };
+		348EDF592B7CB59D00B1BA66 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EDF582B7CB59D00B1BA66 /* OpenAIService.swift */; };
+		348EDF5B2B7CB66D00B1BA66 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EDF5A2B7CB66D00B1BA66 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 /* Begin PBXFileReference section */
 		348EDF222B7CB10F00B1BA66 /* Sonchv3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sonchv3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		348EDF252B7CB10F00B1BA66 /* Sonchv3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sonchv3App.swift; sourceTree = "<group>"; };
-		348EDF272B7CB10F00B1BA66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		348EDF272B7CB10F00B1BA66 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		348EDF292B7CB11000B1BA66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		348EDF2B2B7CB11000B1BA66 /* Sonchv3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sonchv3.entitlements; sourceTree = "<group>"; };
 		348EDF2D2B7CB11000B1BA66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +50,9 @@
 		348EDF3D2B7CB11000B1BA66 /* Sonchv3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sonchv3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		348EDF412B7CB11000B1BA66 /* Sonchv3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sonchv3UITests.swift; sourceTree = "<group>"; };
 		348EDF432B7CB11000B1BA66 /* Sonchv3UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sonchv3UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		348EDF562B7CB2E100B1BA66 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		348EDF582B7CB59D00B1BA66 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		348EDF5A2B7CB66D00B1BA66 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				348EDF522B7CB15900B1BA66 /* Inject in Frameworks */,
+				348EDF552B7CB16500B1BA66 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,10 +106,13 @@
 			isa = PBXGroup;
 			children = (
 				348EDF252B7CB10F00B1BA66 /* Sonchv3App.swift */,
-				348EDF272B7CB10F00B1BA66 /* ContentView.swift */,
+				348EDF272B7CB10F00B1BA66 /* ChatView.swift */,
+				348EDF562B7CB2E100B1BA66 /* ChatViewModel.swift */,
+				348EDF582B7CB59D00B1BA66 /* OpenAIService.swift */,
 				348EDF292B7CB11000B1BA66 /* Assets.xcassets */,
 				348EDF2B2B7CB11000B1BA66 /* Sonchv3.entitlements */,
 				348EDF2C2B7CB11000B1BA66 /* Preview Content */,
+				348EDF5A2B7CB66D00B1BA66 /* Constants.swift */,
 			);
 			path = Sonchv3;
 			sourceTree = "<group>";
@@ -145,6 +158,10 @@
 			dependencies = (
 			);
 			name = Sonchv3;
+			packageProductDependencies = (
+				348EDF512B7CB15900B1BA66 /* Inject */,
+				348EDF542B7CB16500B1BA66 /* Alamofire */,
+			);
 			productName = Sonchv3;
 			productReference = 348EDF222B7CB10F00B1BA66 /* Sonchv3.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +234,10 @@
 				Base,
 			);
 			mainGroup = 348EDF192B7CB10F00B1BA66;
+			packageReferences = (
+				348EDF502B7CB15900B1BA66 /* XCRemoteSwiftPackageReference "Inject" */,
+				348EDF532B7CB16500B1BA66 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 348EDF232B7CB10F00B1BA66 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				348EDF282B7CB10F00B1BA66 /* ContentView.swift in Sources */,
+				348EDF5B2B7CB66D00B1BA66 /* Constants.swift in Sources */,
+				348EDF282B7CB10F00B1BA66 /* ChatView.swift in Sources */,
+				348EDF572B7CB2E100B1BA66 /* ChatViewModel.swift in Sources */,
 				348EDF262B7CB10F00B1BA66 /* Sonchv3App.swift in Sources */,
+				348EDF592B7CB59D00B1BA66 /* OpenAIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +641,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		348EDF502B7CB15900B1BA66 /* XCRemoteSwiftPackageReference "Inject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+		348EDF532B7CB16500B1BA66 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		348EDF512B7CB15900B1BA66 /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 348EDF502B7CB15900B1BA66 /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
+		};
+		348EDF542B7CB16500B1BA66 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 348EDF532B7CB16500B1BA66 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 348EDF1A2B7CB10F00B1BA66 /* Project object */;
 }

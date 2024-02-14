@@ -11,7 +11,7 @@ import SwiftUI
 struct Sonchv3App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ChatView()
         }
     }
 }
